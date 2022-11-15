@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Google</title>
+</head>
+<body>
+    <header class="header">
+        <ul class="header__container">
+            <li class="header__container-link"><a href="#" class="header__container-a">Todo</a></li>
+            <li class="header__container-link"><a href="#" class="header__container-a">Gmail</a></li>
+            <li class="header__container-link"><a href="#" class="header__container-a">Imagenes</a></li>
+        </ul>
+        <div class="header__apps"></div>
+        <div class="header__acount"></div>
+    </header>
+
+    <main class="main">
+
+        <section class="section-top">
+            <picture>
+                <source media="screen and (min-width:600px)" srcset="https://i.imgur.com/YMSoDYM.png" class="section-top__big-logo" >
+                <img src="https://i.imgur.com/PSOJBV4.png" alt="Google Logo" class="section-top__logo">
+            </picture>
+
+            <div class="section-top__search">
+                <div class="section-top__search-img">
+                    <a href="#seach"><img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iZUw3b0FjIiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTIwLjQ5IDE5bC01LjczLTUuNzNDMTUuNTMgMTIuMiAxNiAxMC45MSAxNiA5LjUgMTYgNS45MSAxMy4wOSAzIDkuNSAzUzMgNS45MSAzIDkuNSA1LjkxIDE2IDkuNSAxNmMxLjQxIDAgMi43LS40NyAzLjc3LTEuMjRMMTkgMjAuNDkgMjAuNDkgMTl6TTUgOS41QzUgNy4wMSA3LjAxIDUgOS41IDVTMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0IDUgMTEuOTkgNSA5LjV6Ii8+PC9zdmc+" alt=""></a>
+                </div>
+                <div class="section-top__search-container">
+                    <label for="search">
+                        <input type="search" id="seach" placeholder="Busca en Google o escribe una URL" class="section-top__search-nav">
+                    </label>
+                </div>
+                <div class="section-top__search-img">
+                    <a href="#" ><img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iZ294anViIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iIzQyODVmNCIgZD0ibTEyIDE1YzEuNjYgMCAzLTEuMzEgMy0yLjk3di03LjAyYzAtMS42Ni0xLjM0LTMuMDEtMy0zLjAxcy0zIDEuMzQtMyAzLjAxdjcuMDJjMCAxLjY2IDEuMzQgMi45NyAzIDIuOTd6Ii8+PHBhdGggZmlsbD0iIzM0YTg1MyIgZD0ibTExIDE4LjA4aDJ2My45MmgtMnoiLz48cGF0aCBmaWxsPSIjZmJiYzA0IiBkPSJtNy4wNSAxNi44N2MtMS4yNy0xLjMzLTIuMDUtMi44My0yLjA1LTQuODdoMmMwIDEuNDUgMC41NiAyLjQyIDEuNDcgMy4zOHYwLjMybC0xLjE1IDEuMTh6Ii8+PHBhdGggZmlsbD0iI2VhNDMzNSIgZD0ibTEyIDE2LjkzYTQuOTcgNS4yNSAwIDAgMSAtMy41NCAtMS41NWwtMS40MSAxLjQ5YzEuMjYgMS4zNCAzLjAyIDIuMTMgNC45NSAyLjEzIDMuODcgMCA2Ljk5LTIuOTIgNi45OS03aC0xLjk5YzAgMi45Mi0yLjI0IDQuOTMtNSA0LjkzeiIvPjwvc3ZnPg==" alt=""></a>
+                </div>
+                <div class="section-top__search-img">
+                    <a href="#"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlN0YW5kYXJkX3Byb2R1Y3RfaWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE5MnB4IiBoZWlnaHQ9IjE5MnB4IiB2aWV3Qm94PSIwIDAgMTkyIDE5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTkyIDE5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxyZWN0IGlkPSJib3VuZGluZ19ib3hfMV8iIGZpbGw9Im5vbmUiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIi8+CjxnIGlkPSJhcnRfbGF5ZXIiPgoJPGNpcmNsZSBpZD0iRG90IiBmaWxsPSIjNDI4NUY0IiBjeD0iOTYiIGN5PSIxMDQuMTUiIHI9IjI4Ii8+Cgk8cGF0aCBpZD0iUmVkIiBmaWxsPSIjRUE0MzM1IiBkPSJNMTYwLDcydjQwLjE1VjEzNmMwLDEuNjktMC4zNCwzLjI5LTAuODIsNC44MnYwdjBjLTEuNTcsNC45Mi01LjQzLDguNzgtMTAuMzUsMTAuMzVoMHYwCgkJYy0xLjUzLDAuNDktMy4xMywwLjgyLTQuODIsMC44Mkg2NmwxNiwxNmg1MGgxMmM0LjQyLDAsOC42My0wLjksMTIuNDYtMi41MWMzLjgzLTEuNjIsNy4yOC0zLjk2LDEwLjE3LTYuODYKCQljMS40NS0xLjQ1LDIuNzYtMy4wMywzLjkxLTQuNzRjMi4zLTMuNCwzLjk2LTcuMjgsNC44MS0xMS40NGMwLjQzLTIuMDgsMC42NS00LjI0LDAuNjUtNi40NXYtMTJWOTYuMTVWODRsLTYtMTlsLTEwLjgyLDIuMTgKCQlDMTU5LjY2LDY4LjcxLDE2MCw3MC4zMSwxNjAsNzJ6Ii8+Cgk8cGF0aCBpZD0iQmx1ZSIgZmlsbD0iIzQyODVGNCIgZD0iTTMyLDcyYzAtMS42OSwwLjM0LTMuMjksMC44Mi00LjgyYzEuNTctNC45Miw1LjQzLTguNzgsMTAuMzUtMTAuMzVDNDQuNzEsNTYuMzQsNDYuMzEsNTYsNDgsNTYKCQloOTZjMS42OSwwLDMuMjksMC4zNCw0LjgyLDAuODJjMCwwLDAsMCwwLDBMMTQ5LDQ1bC0xNy01bC0xNi0xNmgtMTMuNDRIOTZoLTYuNTZINzZMNjAsNDBINDhjLTE3LjY3LDAtMzIsMTQuMzMtMzIsMzJ2MTJ2MjBsMTYsMTYKCQlWNzJ6Ii8+Cgk8cGF0aCBpZD0iR3JlZW4iIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xNDQsNDBoLTEybDE2LjgzLDE2LjgzYzEuMjMsMC4zOSwyLjM5LDAuOTMsMy40NywxLjU5YzIuMTYsMS4zMiwzLjk3LDMuMTMsNS4yOSw1LjI5CgkJYzAuNjYsMS4wOCwxLjIsMi4yNCwxLjU5LDMuNDd2MEwxNzYsODRWNzJDMTc2LDU0LjMzLDE2MS42Nyw0MCwxNDQsNDB6Ii8+Cgk8cGF0aCBpZD0iWWVsbG93IiBmaWxsPSIjRkJCQzA0IiBkPSJNNDgsMTY4aDM5Ljg5bC0xNi0xNkg0OGMtOC44MiwwLTE2LTcuMTgtMTYtMTZ2LTIzLjg5bC0xNi0xNlYxMzZDMTYsMTUzLjY3LDMwLjMzLDE2OCw0OCwxNjh6CgkJIi8+CjwvZz4KPC9zdmc+Cg==" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__section-middle">
+            <div class="section-middle__container">
+                <button class="section-middle__button">Buscar con Google</button>
+                <button class="section-middle__button">Voy a tener suerte</button>
+                <p class="section-middle__message">Ofrecido por Google en: <a href="">Español (Latinoamerica)</a></p>
+            </div>
+        </section>
+
+        <section class="main__section-down">
+            <a href="https://www.facebook.com/" class="section-down__shortcuts">
+                <div class="section-down__background">
+                    <img src="https://i.imgur.com/5X4epfW.png" alt="Facebook" class="section-down__img"><img>
+                </div>
+                <p class="section-down__name">Facebook</p>
+            </a>
+            <a href="https://www.instagram.com/" class="section-down__shortcuts">
+                <div class="section-down__background">
+                    <img src="https://i.imgur.com/6vVBkQn.png" alt="Instagram" class="section-down__img"><img>
+                </div>
+                <p class="section-down__name">Instagram</p>
+            </a>
+            <a href="https://www.google.com/intl/es-419/gmail/about/" class="section-down__shortcuts">
+                <div class="section-down__background">
+                    <img src="https://i.imgur.com/P6SMWlB.png" alt="Gmail" class="section-down__img"><img>
+                </div>
+                <p class="section-down__name">Gmail</p>
+            </a>
+            <a href="https://www.youtube.com/" class="section-down__shortcuts">
+                <div class="section-down__background">
+                    <img src="https://i.imgur.com/lIS7ENA.png" alt="Youtube" class="section-down__img"><img>
+                </div>
+                <p class="section-down__name">Youtube</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="section-footer-1">
+            <p class="section-footer__country">Venezuela</p>
+        </section>
+        <section class="section-footer-2">
+            <a href="#" class="section-footer__link">Preferencia</a>
+            <a href="#" class="section-footer__link">Privacidad</a>
+            <a href="#" class="section-footer__link">Condiciones</a>
+        </section>
+        <section class="section-footer-3">
+            <a href="#" class="section-footer__link">Publicidad</a>
+            <a href="#" class="section-footer__link">Negocios</a>
+            <a href="#" class="section-footer__link">Sobre Google</a>
+        </section>
+    </footer>
+</body>
+</html>
